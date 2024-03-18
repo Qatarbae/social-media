@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/bottomMenuFragment">
+
+    <fragment
+        android:id="@+id/bottomMenuFragment"
+        android:name="com.eltex.androidschool.fragment.BottomMenuFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_bottom_menu">
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_newPostFragment"
+            app:destination="@id/newPostFragment" />
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_commentFragment"
+            app:destination="@id/commentFragment" />
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_newEventFragment"
+            app:destination="@id/newEventFragment" />
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_editEventFragment"
+            app:destination="@id/editEventFragment" />
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_eventDetailsFragment"
+            app:destination="@+id/eventDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newPostFragment"
+        android:name="com.eltex.androidschool.fragment.NewPostFragment"
+        android:label="@string/new_post_label"
+        tools:layout="@layout/fragment_new_post">
+        <action
+            android:id="@+id/action_newPostFragment_to_locationFragment"
+            app:destination="@id/locationFragment" />
+        <action
+            android:id="@+id/action_newPostFragment_to_chooseUserFragment"
+            app:destination="@id/chooseUserFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.eltex.androidschool.fragment.FragmentLocation"
+        android:label="Location"
+        tools:layout="@layout/fragment_location" />
+    <fragment
+        android:id="@+id/commentFragment"
+        android:name="com.eltex.androidschool.feature.comments.fragment.CommentFragment"
+        android:label="CommentFragment" />
+    <fragment
+        android:id="@+id/newEventFragment"
+        android:name="com.eltex.androidschool.fragment.NewEventFragment"
+        android:label="@string/new_event_label"
+        tools:layout="@layout/fragment_new_event" />
+    <fragment
+        android:id="@+id/editEventFragment"
+        android:name="com.eltex.androidschool.fragment.NewEventFragment"
+        android:label="@string/edit_event_label"
+        tools:layout="@layout/fragment_new_event" />
+    <fragment
+        android:id="@+id/eventDetailsFragment"
+        android:name="com.eltex.androidschool.fragment.EventDetailsFragment"
+        android:label="@string/event"
+        tools:layout="@layout/fragment_event_details" />
+    <fragment
+        android:id="@+id/chooseUserFragment"
+        android:name="com.eltex.androidschool.fragment.FragmentUsers"
+        android:label="Choose users"
+        tools:layout="@layout/fragment_users"/>
+</navigation>

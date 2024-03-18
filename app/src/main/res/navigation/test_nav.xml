@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test_nav"
+    app:startDestination="@id/bottomMenuFragment">
+
+    <fragment
+        android:id="@+id/bottomMenuFragment"
+        android:name="com.eltex.androidschool.fragment.BottomMenuFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_bottom_menu">
+        <action
+            android:id="@+id/action_bottomMenuFragment_to_newJobFragment_check"
+            app:destination="@id/newJobFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newJobFragment"
+        android:name="com.eltex.androidschool.fragment.job.NewJobFragment"
+        android:label="New Job"
+        tools:layout="@layout/fragment_job" />
+</navigation>

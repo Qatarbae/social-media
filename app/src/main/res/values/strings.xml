@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Android School</string>
+    <string name="content_hint">Content</string>
+    <string name="save">Save</string>
+    <string name="add_post_description">Add post</string>
+    <string name="empty_post_error">Text cannot be blank</string>
+    <string name="delete">Delete</string>
+    <string name="posts_menu">Posts</string>
+    <string name="events_menu">Events</string>
+    <string name="users_menu">Users</string>
+    <string name="new_post_label">New post</string>
+    <string name="retry">Retry</string>
+    <string name="network_error">Network error</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="preview_description">Preview</string>
+    <string name="remove">Remove</string>
+    <string name="noComments">No comments</string>
+    <string name="enterTextHere">Enter text here</string>
+    <string name="event_picture">Event picture</string>
+    <string name="edit_event_label">Edit event</string>
+    <string name="new_event_label">New event</string>
+    <string name="edit">Edit</string>
+    <string name="skeleton_participants" translatable="false">2</string>
+    <string name="skeleton_likes" translatable="false">10</string>
+    <string name="skeleton_link" translatable="false">https://m2.material.io/components/cards</string>
+    <string name="skeleton_content" translatable="false">Слушайте, а как вы относитесь к тому, чтобы собраться большой компанией и поиграть в настолки? У меня есть несколько клевых игр, можем устроить вечер настолок! Пишите в лс или звоните</string>
+    <string name="skeleton_datetime" translatable="false">16.05.22 12:00</string>
+    <string name="skeleton_type" translatable="false">Offline</string>
+    <string name="skeleton_published" translatable="false">11.05.22 11:21</string>
+    <string name="skeleton_author" translatable="false">Lydia Westervelt</string>
+    <string name="attachment_photo">Attachment photo</string>
+    <string name="take_photo">Take photo</string>
+    <string name="gallery">Gallery</string>
+    <string name="avatar">Avatar</string>
+    <string name="speakers">Speakers</string>
+    <string name="likers">Likers</string>
+    <string name="participants">Participants</string>
+    <string name="event">Event</string>
+    <string name="users">Users</string>
+    <string name="login">Login</string>
+    <string name="registration_title">Registration</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="cannot_be_empty">" cannot be empty"</string>
+    <string name="password_mismatch">"Password mismatch"</string>
+    <string name="remove_avatar">Remove avatar</string>
+    <string name="choose_avatar">choose avatar</string>
+    <string name="registration_error">Registration error</string>
+    <string name="login_button">Login</string>
+    <string name="audio_icon">Audio Icon</string>
+    <string name="audio_file">Audio File</string>
+    <string name="play">Play</string>
+    <string name="select_type">Select type</string>
+    <string name="photocamera">Photocamera</string>
+    <string name="videocamera">Videocamera</string>
+    <string name="select_camera">Select camera</string>
+    <string name="error_name_empty">Name cannot be empty</string>
+    <string name="error_position_empty">Position cannot be empty</string>
+    <string name="error_invalid_link">Invalid link</string>
+    <string name="date_selection">Date selection</string>
+    <string name="data_cannot_be_empty">Data cannot be empty</string>
+    <string name="invalid_date">Invalid date</string>
+    <string name="position">Position</string>
+    <string name="link">link</string>
+    <string name="select_date">select date</string>
+    <string name="create">Create</string>
+    <string name="empty_end_date">HB</string>
+</resources>

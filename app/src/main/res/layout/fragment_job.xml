@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/common_spacing"
+    android:layout_marginEnd="@dimen/common_spacing"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/nameJobLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/common_spacing"
+        android:contentDescription="@string/name"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:endIconDrawable="@drawable/delete"
+        app:endIconMode="custom"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/name"
+            android:hint="@string/name" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/positionJobLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:endIconDrawable="@drawable/delete"
+        app:endIconMode="custom"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/nameJobLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/positionJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/position"
+            android:hint="@string/position" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/linkLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:endIconDrawable="@drawable/delete"
+        app:endIconMode="custom"
+        app:errorEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/positionJobLayout">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/link"
+            android:hint="@string/link" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="?colorSurface"
+        android:contentDescription="@string/select_date"
+        android:text="@string/date_selection"
+        android:textColor="?colorOnSurface"
+        app:cornerRadius="8dp"
+        app:strokeColor="?colorOutlineVariant"
+        app:strokeWidth="2dp"
+        tools:text="27.09.2023 – НВ"
+        tools:textColor="?colorOnSurface" />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonCreateJob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/common_spacing"
+        android:backgroundTint="?colorPrimary"
+        android:contentDescription="@string/create"
+        android:text="@string/create"
+        android:textColor="?colorOnPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/space" />
+
+</LinearLayout>

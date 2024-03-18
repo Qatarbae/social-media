@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/registry_navigation"
+    app:startDestination="@id/fragmentRegistration">
+    <fragment
+        android:id="@+id/fragmentRegistration"
+        android:name="com.eltex.androidschool.fragment.FragmentRegistration"
+        android:label="fragment_registration"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_fragmentRegistration_to_toolbarFragment"
+            app:destination="@id/toolbarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toolbarFragment"
+        android:name="com.eltex.androidschool.fragment.ToolbarFragment"
+        android:label="fragment_toolbar"
+        tools:layout="@layout/fragment_toolbar" />
+</navigation>
